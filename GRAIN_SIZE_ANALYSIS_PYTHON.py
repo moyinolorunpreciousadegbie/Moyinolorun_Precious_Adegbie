@@ -55,34 +55,3 @@ Weight_in_grams = [ [7,3,6,9,175,261,3,7,4,3,5,5,7,4 ],  # MONAHANS SAMPLE A
 Grain_analysis_algorithm(Weight_in_grams )
 
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
