@@ -38,7 +38,7 @@ int MaxRectangle(int mat[R][C])
 				for (int c2 = 0  ; c2 < C; c2++) {                                                 
 					if( r <= r2 && c <= c2  &&  ( (r2 + 1 - r)!= R || (c2 + 1 - c) !=C ) ) { 						
 						if( (  (r2 + 1 - r) * (c2 + 1 - c)  )/ ( r2 + 1 - r)   ==     ( r2 + 1 - r ) || (c2 + 1 - c) && (  (r2 + 1 - r) * (c2 + 1 - c)  )/ (c2 + 1 - c)   ==  ( r2 + 1 - r ) ||   (c2 + 1 - c)     ) {   
-														sum = sumQuery( mat , r, c, r2, c2);  
+							sum = sumQuery( mat , r, c, r2, c2);  
 							if (sum > max_sum){
 								max_sum = sum;
 								
