@@ -21,7 +21,7 @@ int main() {
 				
 			}
 	}
-	/*
+	/* // PYTHON CODE
 	
 		for i in range(2):
 		#print(i, (1-i)) # i = 0, 1 |   1 - i = 1, 0
