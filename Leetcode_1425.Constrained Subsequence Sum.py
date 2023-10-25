@@ -1,6 +1,6 @@
 def column_sum(lst):
 	res=[]
-	for i in range(0,len(lst)):
+	for i in range(0,len(lst[0])):
 		s=0
 		for j in range(0,len(lst[i])):
 			s+=lst[j][i]
