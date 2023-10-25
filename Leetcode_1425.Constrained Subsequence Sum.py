@@ -1,3 +1,5 @@
+# Constrained Subsequence Sum - Leetcode 1425
+
 def column_sum(lst):
 	res=[]
 	for i in range(0,len(lst[0])):
@@ -32,10 +34,11 @@ def do(A,k):
 
 	AC = [[0] * len(A) for i in range(len(A))]
 
-	for jj in range(len(AC) // len(A) ):
+	#for jj in range(len(AC) // len(A) ):  # or
+	for jj in range(1):
 		for i in range(len(A)):
 			for j in range(len(A)):
-				AC[i+  len(A) * jj][j] = A[j]
+				AC[i+  len(AC) * jj][j] = A[j]
 
 
 	for i in  range(len(A)):
@@ -49,11 +52,15 @@ def do(A,k):
 	for i in range(1,len(AC)):
 		for j in range(0,i):
 			AC[i][j] = A[j] 
+			
+	#print(AC)
 		
 	RR = len(A) - k + 1
 	AC = AC[0:RR]
 	l2 = []
 	AC = transpose(AC, l2)
+	
+	#print(AC)
 
 	return  max(column_sum(AC) ) 
 
