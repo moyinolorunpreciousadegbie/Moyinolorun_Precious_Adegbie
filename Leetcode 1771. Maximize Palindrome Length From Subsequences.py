@@ -13,6 +13,7 @@ def main(word1, word2):
 					if nw == nw[::-1]    or   nww == nww[::-1]   :
 						mx = max(mx, len(nw))
 						mx = max(mx, len(nww))
+						break
 	return mx
 
 
